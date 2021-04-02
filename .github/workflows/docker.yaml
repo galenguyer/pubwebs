@@ -7,7 +7,7 @@ on:
       #- main
     # Publish `v1.2.3` tags as releases.
     tags:
-      - v*
+      - v*.*.*
 
 env:
   IMAGE_NAME: ${{ github.event.repository.name }}
