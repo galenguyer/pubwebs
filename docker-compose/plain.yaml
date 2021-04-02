@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  pubwebs:
+    image: galenguyer/pubwebs:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - type: bind
+        source: /home
+        target: /home
+        read_only: true
